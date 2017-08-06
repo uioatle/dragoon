@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dragoon", "Dragoon\Dragoon.vcxproj", "{333F3186-9511-4C73-805C-522B139731EE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DragoonGlobal", "DragoonGlobal\DragoonGlobal.vcxproj", "{210C28FB-24D6-49FB-8FCB-E9947450045B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestExecutable", "TestExecutable\TestExecutable.vcxproj", "{82296972-2F39-43BC-89E9-E5D55982C2DB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DragoonDll", "DragoonDll\DragoonDll.vcxproj", "{D3C4E642-136D-4039-85D3-C81AABB08D3B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DragoonDllWriteWatchingReallocator", "DragoonDllWriteWatchingReallocator\DragoonDllWriteWatchingReallocator.vcxproj", "{A43C6243-683A-4F80-9906-EE7B296C3B61}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ThreadEventLogConverter", "ThreadEventLogConverter\ThreadEventLogConverter.vcxproj", "{5BF9442D-5F78-482D-807A-58B894C8CF26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{333F3186-9511-4C73-805C-522B139731EE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{333F3186-9511-4C73-805C-522B139731EE}.Debug|Win32.Build.0 = Debug|Win32
+		{333F3186-9511-4C73-805C-522B139731EE}.Release|Win32.ActiveCfg = Release|Win32
+		{333F3186-9511-4C73-805C-522B139731EE}.Release|Win32.Build.0 = Release|Win32
+		{210C28FB-24D6-49FB-8FCB-E9947450045B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{210C28FB-24D6-49FB-8FCB-E9947450045B}.Debug|Win32.Build.0 = Debug|Win32
+		{210C28FB-24D6-49FB-8FCB-E9947450045B}.Release|Win32.ActiveCfg = Release|Win32
+		{210C28FB-24D6-49FB-8FCB-E9947450045B}.Release|Win32.Build.0 = Release|Win32
+		{82296972-2F39-43BC-89E9-E5D55982C2DB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{82296972-2F39-43BC-89E9-E5D55982C2DB}.Debug|Win32.Build.0 = Debug|Win32
+		{82296972-2F39-43BC-89E9-E5D55982C2DB}.Release|Win32.ActiveCfg = Release|Win32
+		{82296972-2F39-43BC-89E9-E5D55982C2DB}.Release|Win32.Build.0 = Release|Win32
+		{D3C4E642-136D-4039-85D3-C81AABB08D3B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D3C4E642-136D-4039-85D3-C81AABB08D3B}.Debug|Win32.Build.0 = Debug|Win32
+		{D3C4E642-136D-4039-85D3-C81AABB08D3B}.Release|Win32.ActiveCfg = Release|Win32
+		{D3C4E642-136D-4039-85D3-C81AABB08D3B}.Release|Win32.Build.0 = Release|Win32
+		{A43C6243-683A-4F80-9906-EE7B296C3B61}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A43C6243-683A-4F80-9906-EE7B296C3B61}.Debug|Win32.Build.0 = Debug|Win32
+		{A43C6243-683A-4F80-9906-EE7B296C3B61}.Release|Win32.ActiveCfg = Release|Win32
+		{A43C6243-683A-4F80-9906-EE7B296C3B61}.Release|Win32.Build.0 = Release|Win32
+		{5BF9442D-5F78-482D-807A-58B894C8CF26}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5BF9442D-5F78-482D-807A-58B894C8CF26}.Debug|Win32.Build.0 = Debug|Win32
+		{5BF9442D-5F78-482D-807A-58B894C8CF26}.Release|Win32.ActiveCfg = Release|Win32
+		{5BF9442D-5F78-482D-807A-58B894C8CF26}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

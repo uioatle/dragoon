@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="syscall_handler.cpp" />
+    <ClCompile Include="event_log_writer.cpp" />
+    <ClCompile Include="recording_handler.cpp" />
+    <ClCompile Include="xxhash.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="syscall_handler.h" />
+    <ClInclude Include="thread_recording_info.h" />
+    <ClInclude Include="event_log_writer.h" />
+    <ClInclude Include="recording_handler.h" />
+    <ClInclude Include="checksum.h" />
+    <ClInclude Include="xxhash.h" />
+    <ClInclude Include="thread_info.h" />
+  </ItemGroup>
+</Project>
