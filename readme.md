@@ -1,7 +1,5 @@
 # Pure User Mode Deterministic Replay on Windows
-This repository contains the code for my master's thesis.
-
-The included solutions are as follows:
+This repository contains the code for my master's thesis. The included solutions are described below.
 
 ## Dragoon
 This is Dragoon's recording component. In the future also the replay component will reside within this solution. The reason the recorder and replayer currently don't share the same solution is because the latter was implemented before the former. If you look at the code you'll see how chaotic it is compared to the recording component rewrite.
