@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestExecutable", "TestExecutable\TestExecutable.vcxproj", "{9553016A-A07C-4B62-A4F1-E6C563ED4F7F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MiraiReplayer", "MiraiReplayer\MiraiReplayer.vcxproj", "{E22AE9B1-5F78-4F7D-BE47-C90D588078C2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4E8155AC-C3AC-496A-BE31-F8EE5D3E1698} = {4E8155AC-C3AC-496A-BE31-F8EE5D3E1698}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MiraiReplayProcess", "MiraiReplayProcess\MiraiReplayProcess.vcxproj", "{F1B97A17-51C6-4A8C-B06B-30975858A78D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MiraiReplayerDll", "MiraiReplayerDll\MiraiReplayerDll.vcxproj", "{4E8155AC-C3AC-496A-BE31-F8EE5D3E1698}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shared", "Shared\Shared.vcxproj", "{DE4EA561-98AC-4B76-BA39-BA39952EC2B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9553016A-A07C-4B62-A4F1-E6C563ED4F7F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9553016A-A07C-4B62-A4F1-E6C563ED4F7F}.Debug|Win32.Build.0 = Debug|Win32
+		{9553016A-A07C-4B62-A4F1-E6C563ED4F7F}.Release|Win32.ActiveCfg = Release|Win32
+		{9553016A-A07C-4B62-A4F1-E6C563ED4F7F}.Release|Win32.Build.0 = Release|Win32
+		{E22AE9B1-5F78-4F7D-BE47-C90D588078C2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E22AE9B1-5F78-4F7D-BE47-C90D588078C2}.Debug|Win32.Build.0 = Debug|Win32
+		{E22AE9B1-5F78-4F7D-BE47-C90D588078C2}.Release|Win32.ActiveCfg = Release|Win32
+		{E22AE9B1-5F78-4F7D-BE47-C90D588078C2}.Release|Win32.Build.0 = Release|Win32
+		{F1B97A17-51C6-4A8C-B06B-30975858A78D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F1B97A17-51C6-4A8C-B06B-30975858A78D}.Debug|Win32.Build.0 = Debug|Win32
+		{F1B97A17-51C6-4A8C-B06B-30975858A78D}.Release|Win32.ActiveCfg = Release|Win32
+		{F1B97A17-51C6-4A8C-B06B-30975858A78D}.Release|Win32.Build.0 = Release|Win32
+		{4E8155AC-C3AC-496A-BE31-F8EE5D3E1698}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4E8155AC-C3AC-496A-BE31-F8EE5D3E1698}.Debug|Win32.Build.0 = Debug|Win32
+		{4E8155AC-C3AC-496A-BE31-F8EE5D3E1698}.Release|Win32.ActiveCfg = Release|Win32
+		{4E8155AC-C3AC-496A-BE31-F8EE5D3E1698}.Release|Win32.Build.0 = Release|Win32
+		{DE4EA561-98AC-4B76-BA39-BA39952EC2B9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE4EA561-98AC-4B76-BA39-BA39952EC2B9}.Debug|Win32.Build.0 = Debug|Win32
+		{DE4EA561-98AC-4B76-BA39-BA39952EC2B9}.Release|Win32.ActiveCfg = Release|Win32
+		{DE4EA561-98AC-4B76-BA39-BA39952EC2B9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
