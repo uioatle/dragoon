@@ -21,10 +21,10 @@ This is Dragoon's replay component which implements Direct Address Space Recreat
 The projects in this solution are:
 - **MiraiReplayProcess:** The process in which direct address space recreation happens; the address space is torn down and replaced with that in the recorded logs.
 - **MiraiReplayer:** The replay component. Execution starts at main() in main.cpp. It performs direct address space recreation on **MiraiReplayProcess** and sets up a communication channel through shared memory with said process. It then JITs basic blocks and tells the replay process what to do next.
-- **MiraiReplayerDll:** In order for the replay process to have its address space recreated and code thereafter be replayed Dragoon needs to be injected as a DLL in the replay process. This is that DLL, and it is different from **Dragoon/DragoonDll** which is the DLL used for recording. This DLL helps in recreating the address space and receives commands from **MiraiReplayer** that it executes, most notably executing the JITed code before returning to **MiraiReplayer**.
-- **Shared:** Contains shared code for the solution. The communication area code is shared between **MiraiReplayer** and **MiraiReplayerDll**, so it resides in here.
+- **MiraiReplayerDll:** In order for the replay process to have its address space recreated and code thereafter be replayed Dragoon needs to be injected as a DLL in the replay process. This is that DLL, and it is different from *Dragoon/DragoonDll* which is the DLL used for recording. This DLL helps in recreating the address space and receives commands from *MiraiReplayer* that it executes, most notably executing the JITed code before returning to *MiraiReplayer*.
+- **Shared:** Contains shared code for the solution. The communication area code is shared between *MiraiReplayer* and *MiraiReplayerDll*, so it resides in here.
 - **TestExecutable:** A dummy program to test replay using direct address space recreation. It does some inline assembly and makes sure the JITer is able to properly instrument the basic blocks.
-- **Util:** A deleted project. It's the same as **Dragoon/lib/Util**.
+- **Util:** A deleted project. It's the same as *Dragoon/lib/Util*.
 
 The third party libraries **asmjit** and **distorm** have been deleted as they can be found online. They're used by **MiraiReplayer** to disassemble and assemble basic blocks. Everything else is implemented without third party libraries to avoid WinAPI interaction. Regardless, the replay component is much more lenient when it comes to library interaction because much of the work happens in the replayer (**MiraiReplayer**) which has its own process. Libraries are completely banned in the replay process, however.
 
