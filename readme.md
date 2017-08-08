@@ -5,7 +5,7 @@ This repository contains the code for my master's thesis. The included solutions
 This is Dragoon's recording component. In the future also the replay component will reside within this solution. The reason the recorder and replayer currently don't share the same solution is because the latter was implemented before the former. If you look at the code you'll see how chaotic it is compared to the recording component rewrite.
 
 The projects in this solution are:
-- **Dragoon:** The starting point of the recorder. You start the recorder by calling Main() in main.cpp. This project is the console program that kicks off recording. This is where you'd give in command line arguments and such to decide how things should be set up and recorded.
+- **Dragoon:** The starting point of the recorder. You start the recorder by calling main() in main.cpp. This project is the console program that kicks off recording. This is where you'd give in command line arguments and such to decide how things should be set up and recorded.
 - **DragoonDll:** The actual Dragoon recording component. It's a DLL and gets injected by the console program. The code for most of the recording happens here. Recording system calls, callbacks, and so on.
 - **DragoonDllWriteWatchingReallocator:** An individual executable that frees and reallocates everything in the recordee's address space from outside the recordee to avoid chicken-and-egg kind of problems when reallocating.
 - **DragoonGlobal:** Code that is global for the whole solution. Directory paths, logging, and new/delete operator replacement happens here.
@@ -20,7 +20,7 @@ This is Dragoon's replay component which implements Direct Address Space Recreat
 
 The projects in this solution are:
 - **MiraiReplayProcess:** The process in which direct address space recreation is performed.
-- **MiraiReplayer:** The replay component. It performs direct address space recreation on MiraiReplayProcess and sets up a communication channel through shared memory with said process. It then JITs basic blocks and tells the replay process what to do next.
+- **MiraiReplayer:** The replay component. Execution starts at main() in main.cpp. It performs direct address space recreation on MiraiReplayProcess and sets up a communication channel through shared memory with said process. It then JITs basic blocks and tells the replay process what to do next.
 - **MiraiReplayerDll:** In order for the replay process to have its address space recreated and code thereafter be replayed Dragoon needs to be injected as a DLL in the replay process. This is that DLL. It helps in recreating the address space and receives commands that it executes, most notably running the JITed code before returning to MiraiReplayer.
 - **Shared:** Contains shared code for the solution. The communication area code is shared between MiraiReplayer and MiraiReplayerDll, so it resides in here.
 - **TestExecutable:** A dummy program to test replay using direct address space recreation. It does some inline assembly and makes sure the JITer is able to properly instrument the basic blocks.
